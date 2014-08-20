@@ -1,0 +1,27 @@
+topic: ~Example()
+language: enu
+
+include:lexicon.top
+
+concept:(hello) ^rand[hey "what's up" "how goes it" hi]
+concept:(goodbye) ["later man" "peace out girl scout"] 
+
+## start the game
+u:(e:onStart) we are now about to $Dialog/NotUnderstood ^gotoReactivate(start-dialog)
+
+u:(e:Madlibs/onStart) starting
+
+u:(sup) nothing
+
+## this is also a comment
+proposal: %start-dialog ~hello , ~hello , gather round. \PAU=350\ Okay great. $onDone=1
+
+proposal: Hello human \PAU=400\ How are you doing today? $onDone=1
+    I'm doing great
+
+
+su:(yes) superrrrr
+recover:
+
+
+
