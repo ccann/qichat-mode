@@ -19,10 +19,10 @@ And you’re done!
 ## Keybindings
 
 ```elisp
-C-c p  ;; insert proposal
-C-c u  ;; insert user rule
-C-c e  ;; insert user rule and event
-C-c SPC  ;; insert pause, specify length
+C-c p  ;; ==> proposal:
+C-c u  ;; ==> u:()
+C-c e  ;; ==> u:(e:)
+C-c SPC  ;; ==> \\PAU=___\\
 C-c t  ;; test buffer (requires an active local naoqi session)
 ```
 
