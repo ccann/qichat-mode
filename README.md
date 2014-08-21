@@ -19,11 +19,11 @@ And you’re done!
 ## Keybindings
 
 ```elisp
-C-c p  ;; ==> proposal:
-C-c u  ;; ==> u:()
-C-c e  ;; ==> u:(e:)
-C-c SPC  ;; ==> \\PAU=___\\
-C-c t  ;; test buffer (requires an active local naoqi session)
+C-c p    ;; insert proposal ==> proposal:
+C-c u    ;; insert user rule ==> u:()
+C-c e    ;; insert user rule and event ==> u:(e:)
+C-c SPC  ;; insert pause, prompt for duration ==> \\PAU=___\\
+C-c t    ;; test buffer (requires an active local naoqi session)
 ```
 
 ## Useful Hook
