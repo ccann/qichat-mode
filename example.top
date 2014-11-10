@@ -1,7 +1,7 @@
 topic: ~Example()
 language: enu
 
-include:lexicon.top
+# include:lexicon.top
 
 concept:(hello) ^rand[hey "what's up" "how goes it" hi]
 concept:(goodbye) ["later man" "peace out girl scout"] 
@@ -21,7 +21,7 @@ proposal: Hello human \PAU=400\ How are you doing today? $onDone=1
 
 
 su:(yes) superrrrr
-recover:
+# recover:
 
 
 

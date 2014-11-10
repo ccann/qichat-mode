@@ -1,5 +1,5 @@
 (defvar qichat-mode-hook nil)
-(defvar qichat-test-path "/home/ccanning/dev/qichat-mode")
+(defvar qichat-test-path (pwd))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.top\\'" . qichat-mode))
@@ -100,11 +100,10 @@
 (defun qichat-test-buffer ()
   (interactive)
   ;;(message (buffer-file-name))
-  (shell-command (concat "python " (concat qichat-test-path "/test_qichat.py") " " (buffer-file-name)))
-  
+  (shell-command (concat "python " (concat qichat-test-path "/test_qichat.py")
+                         " "
+                         (shell-quote-argument (buffer-file-name))))
   )
-
-
 
 (define-derived-mode qichat-mode fundamental-mode "QiChat"
   "Major mode for editing qichat topic files"
@@ -113,6 +112,7 @@
   (setq-local font-lock-defaults '(qichat-font-lock-keywords))
   (setq-local indent-line-function 'qichat-indent-line)
   )
+
 
 
 (provide 'qichat-mode)
