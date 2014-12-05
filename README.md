@@ -1,8 +1,8 @@
 # qichat-mode
 
-An Emacs major mode for editing and interacting with qichat files.
+An Emacs major mode for editing and interacting with qichat files. First and foremost provides syntax highlighting for topic files, as well as some input and testing utilities.
 
-This is a work in progress and I'll be adding keybindings and functionality regularly.
+This is a work in progress and I'll be adding keybindings and functionality semi-regularly.
 
 
 ## Installation
@@ -26,15 +26,12 @@ C-c SPC  ;; insert pause, prompt for duration ==> \\PAU=___\\
 C-c t    ;; test buffer (requires an active local naoqi session)
 ```
 
-## Useful Hook
+## Misc.
 
-This is my qichat mode hook:
+I've found subword-mode to be useful with QiChat
 
 ```elisp
-(add-hook 'qichat-mode-hook (lambda ()
-                              (linum-mode 1)  ;; show line numbers
-                              (subword-mode 1)  ;; navigate camelCase words
-                              (fci-mode 1)))  ;; turn on fill-column indicator
+(subword-mode 1)  ;; navigate camelCase words
 ```
 
 ## TODO
